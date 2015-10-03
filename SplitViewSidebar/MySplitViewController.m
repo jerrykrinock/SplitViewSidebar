@@ -2,6 +2,15 @@
 
 @implementation MySplitViewController
 
+/*****************************************************************************
+ 
+ The code in this file is quite an un-educated guess, and may be complete
+ garbage.  If it should be ripped out and replaced with an entirely different
+ approach, please do so!  --Jerry
+ 
+ *****************************************************************************/
+ 
+
 /* This is implmented by superclass but not as an IBOutlet, so we need this to
  avoid compiler warning. */
 @dynamic splitView ;
@@ -22,7 +31,10 @@
     [super viewDidLoad] ;
 }
 
-- (void)expandSidebar:(id)sender {
+/* The following two actions, which are driven by the two buttons in the view,
+ animate very nicely.  */
+
+- (IBAction)expandSidebar:(id)sender {
     [[[[self splitViewItems] firstObject] animator] setCollapsed:NO];
     [self.splitView adjustSubviews] ;
 }
@@ -31,6 +43,10 @@
     [[[[self splitViewItems] firstObject] animator] setCollapsed:YES];
     [self.splitView adjustSubviews] ;
 }
+
+/* But when the user slides the divider, invoking the following method, the
+ animation is erratic.  I don't have any specification for how it should work,
+ other than that it be "nice".  Currently, it is not nice.  */
 
 #define SIDEBAR_WIDTH 158.0
 
