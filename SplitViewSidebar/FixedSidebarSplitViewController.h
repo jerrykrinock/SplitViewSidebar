@@ -7,6 +7,8 @@
 @property IBOutlet NSView* sidebarView ;
 @property IBOutlet NSView* bodyView ;
 
+/* Note: Width of sidebarView is constrained to 158.0 in Interface Builder. */
+
 /* The superclass NSSplitViewController does not declare
  this as an outlet.  I want an outlet for Interface Builder.   Note that,
  in the xib, both outlets 'splitView' and 'view' are connected to the
