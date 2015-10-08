@@ -17,7 +17,7 @@
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <viewController id="H7k-if-nZ0" customClass="MySplitViewController">
+        <viewController id="H7k-if-nZ0" customClass="FixedSidebarSplitViewController">
             <connections>
                 <outlet property="bodyView" destination="mO0-R0-JOW" id="9y3-Ah-KAh"/>
                 <outlet property="bodyViewController" destination="Sp5-eL-11e" id="tST-Ms-urG"/>
@@ -695,12 +695,23 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="257"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <splitView dividerStyle="paneSplitter" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZb-Mn-Cdx">
+                    <splitView dividerStyle="paneSplitter" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZb-Mn-Cdx" customClass="FixedSidebarSplitView">
                         <rect key="frame" x="15" y="20" width="450" height="190"/>
                         <subviews>
                             <customView identifier="Sidebar View" id="RTk-f3-L0P" userLabel="Sidebar View" customClass="RedView">
                                 <rect key="frame" x="0.0" y="0.0" width="158" height="190"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFs-b2-TMt">
+                                        <rect key="frame" x="13" y="44" width="127" height="118"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="The content in this view cannot be squeezed.  It must either be shown at this full width, or collapsed." id="G98-EK-fgR">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="158" id="IBR-uB-6xB"/>
                                 </constraints>
@@ -709,6 +720,17 @@
                             <customView identifier="Body View" fixedFrame="YES" id="mO0-R0-JOW" userLabel="Body View" customClass="BlueView">
                                 <rect key="frame" x="168" y="0.0" width="282" height="190"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pio-cM-CGD">
+                                        <rect key="frame" x="18" y="74" width="261" height="85"/>
+                                        <animations/>
+                                        <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="You can also drag the divider to expand or collapse the sidebar." id="n4r-gJ-PLj">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
                                 <animations/>
                             </customView>
                         </subviews>
@@ -717,6 +739,9 @@
                             <real value="250"/>
                             <real value="250"/>
                         </holdingPriorities>
+                        <connections>
+                            <outlet property="splitViewController" destination="H7k-if-nZ0" id="UAY-xn-7Pl"/>
+                        </connections>
                     </splitView>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hg9-fN-9LZ">
                         <rect key="frame" x="9" y="217" width="143" height="32"/>

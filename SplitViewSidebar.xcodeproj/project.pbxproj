@@ -11,9 +11,10 @@
 		484C60B31BB0F4D80021595A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 484C60B21BB0F4D80021595A /* main.m */; };
 		484C60B51BB0F4D80021595A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484C60B41BB0F4D80021595A /* Images.xcassets */; };
 		484C60D31BB0F5EE0021595A /* BlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 484C60CE1BB0F5EE0021595A /* BlueView.m */; };
-		484C60D41BB0F5EE0021595A /* MySplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484C60D01BB0F5EE0021595A /* MySplitViewController.m */; };
+		484C60D41BB0F5EE0021595A /* FixedSidebarSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484C60D01BB0F5EE0021595A /* FixedSidebarSplitViewController.m */; };
 		484C60D51BB0F5EE0021595A /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 484C60D21BB0F5EE0021595A /* RedView.m */; };
 		484C60D71BB0F6220021595A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 484C60D61BB0F6220021595A /* MainMenu.xib */; };
+		489A7E6E1BC4AC6600F11229 /* FixedSidebarSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 489A7E6D1BC4AC6600F11229 /* FixedSidebarSplitView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +26,13 @@
 		484C60B41BB0F4D80021595A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		484C60CD1BB0F5EE0021595A /* BlueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueView.h; sourceTree = "<group>"; };
 		484C60CE1BB0F5EE0021595A /* BlueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueView.m; sourceTree = "<group>"; };
-		484C60CF1BB0F5EE0021595A /* MySplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySplitViewController.h; sourceTree = "<group>"; };
-		484C60D01BB0F5EE0021595A /* MySplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySplitViewController.m; sourceTree = "<group>"; };
+		484C60CF1BB0F5EE0021595A /* FixedSidebarSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedSidebarSplitViewController.h; sourceTree = "<group>"; };
+		484C60D01BB0F5EE0021595A /* FixedSidebarSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedSidebarSplitViewController.m; sourceTree = "<group>"; };
 		484C60D11BB0F5EE0021595A /* RedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedView.h; sourceTree = "<group>"; };
 		484C60D21BB0F5EE0021595A /* RedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
 		484C60D61BB0F6220021595A /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		489A7E6C1BC4AC6600F11229 /* FixedSidebarSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedSidebarSplitView.h; sourceTree = "<group>"; };
+		489A7E6D1BC4AC6600F11229 /* FixedSidebarSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedSidebarSplitView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +66,12 @@
 			isa = PBXGroup;
 			children = (
 				484C60D61BB0F6220021595A /* MainMenu.xib */,
+				489A7E6C1BC4AC6600F11229 /* FixedSidebarSplitView.h */,
+				489A7E6D1BC4AC6600F11229 /* FixedSidebarSplitView.m */,
 				484C60CD1BB0F5EE0021595A /* BlueView.h */,
 				484C60CE1BB0F5EE0021595A /* BlueView.m */,
-				484C60CF1BB0F5EE0021595A /* MySplitViewController.h */,
-				484C60D01BB0F5EE0021595A /* MySplitViewController.m */,
+				484C60CF1BB0F5EE0021595A /* FixedSidebarSplitViewController.h */,
+				484C60D01BB0F5EE0021595A /* FixedSidebarSplitViewController.m */,
 				484C60D11BB0F5EE0021595A /* RedView.h */,
 				484C60D21BB0F5EE0021595A /* RedView.m */,
 				484C60AF1BB0F4D80021595A /* AppDelegate.h */,
@@ -112,7 +117,7 @@
 		484C60A21BB0F4D80021595A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Jerry;
 				TargetAttributes = {
 					484C60A91BB0F4D80021595A = {
@@ -159,7 +164,8 @@
 				484C60B11BB0F4D80021595A /* AppDelegate.m in Sources */,
 				484C60D31BB0F5EE0021595A /* BlueView.m in Sources */,
 				484C60D51BB0F5EE0021595A /* RedView.m in Sources */,
-				484C60D41BB0F5EE0021595A /* MySplitViewController.m in Sources */,
+				484C60D41BB0F5EE0021595A /* FixedSidebarSplitViewController.m in Sources */,
+				489A7E6E1BC4AC6600F11229 /* FixedSidebarSplitView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +193,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -286,6 +293,7 @@
 				484C60C91BB0F4D80021595A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
