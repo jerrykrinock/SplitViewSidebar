@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F048EBD8-E70D-4E14-9DD1-E85BAEB141C3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SplitViewSidebar</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A7CBEC2047422BA408BADCC6B34C0D4044E4D665</key>
+		<string>https://github.com/jerrykrinock/SplitViewSidebar.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SplitViewSidebar.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A7CBEC2047422BA408BADCC6B34C0D4044E4D665</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jerrykrinock/SplitViewSidebar.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A7CBEC2047422BA408BADCC6B34C0D4044E4D665</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A7CBEC2047422BA408BADCC6B34C0D4044E4D665</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SplitViewSidebar</string>
+		</dict>
+	</array>
+</dict>
+</plist>

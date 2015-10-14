@@ -1,6 +1,13 @@
 #import "FixedSidebarSplitView.h"
 #import "FixedSidebarSplitViewController.h"
 
+@interface FixedSidebarSplitView ()
+
+@property BOOL userIsDraggingDivider ;
+@property CGFloat dividerDragX ;
+
+@end
+
 @implementation FixedSidebarSplitView
 
 - (void)mouseDown:(NSEvent*)event {
