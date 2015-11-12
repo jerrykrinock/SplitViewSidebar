@@ -1,4 +1,5 @@
 #import "FixedSidebarSplitViewController.h"
+#import "NSView+SSYAutoLayout.h"
 
 @implementation FixedSidebarSplitViewController
 
@@ -23,14 +24,48 @@
     [super viewDidLoad] ;
 }
 
+- (void)setFixedWidth:(CGFloat)width {
+    /* Apparently, NSSplitView uses Auto Layout to set minimum and maximum
+     thickness, because without the following line, we get "can't
+     simulatenously satisfy constraints exceptions from Auto Layout in the
+     sequel.  It is not only because of our initial setting in Interface
+     Builder.  For example, if you remove the following line, build, run and
+     change the Fixed Width field in the user interface from -1 to 200 you
+     get an Auto Layout exception as expected.  But then if you change it from
+     200 to 300 you also get an Auto Layout exception.  Seems like this is 
+     a bug, that maybe Apple should have built -removeWidthConstraints into
+     -setMinimumThickness: and setMaximumThickness:.  NSSplitViewItem would
+     need access to its view in order to do that and, it looks like it does
+     not have that. */
+    [self.sidebarView removeWidthConstraints] ;
+    
+    [[self.splitViewItems firstObject] setMinimumThickness:width] ;
+    [[self.splitViewItems firstObject] setMaximumThickness:width] ;
+}
+
+- (CGFloat)fixedWidth {
+    return [self.splitViewItems firstObject].minimumThickness ;
+    /* Should get same answer with maximum thickness, unless fixedWidth has
+     never been set, then you'll get NSSplitViewItemUnspecifiedDimension,
+     which is apparently -1.0 */
+}
+
+/* Needed so that the initial value, NSSplitViewItemUnspecifiedDimension = -1,
+ is displayed in the user interface when the app launches, because the
+ splitViewItems does not get populated until after Cocoa Bindings does its
+ initial 'get'. */
++ (NSSet*)keyPathsForValuesAffectingFixedWidth {
+    return [NSSet setWithObjects:
+            @"splitViewItems",
+            nil] ;
+}
+
 - (IBAction)expandSidebar:(id)sender {
     [[[[self splitViewItems] firstObject] animator] setCollapsed:NO];
-    [self.splitView adjustSubviews] ;
 }
 
 - (IBAction)collapseSidebar:(id)sender {
     [[[[self splitViewItems] firstObject] animator] setCollapsed:YES];
-    [self.splitView adjustSubviews] ;
 }
 
 /* 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48030D701BF41D9D004A6BCF /* NSView+SSYAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48030D6F1BF41D9D004A6BCF /* NSView+SSYAutoLayout.m */; };
+		48030D721BF42519004A6BCF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 48030D711BF42519004A6BCF /* README.md */; };
 		484C60B11BB0F4D80021595A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 484C60B01BB0F4D80021595A /* AppDelegate.m */; };
 		484C60B31BB0F4D80021595A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 484C60B21BB0F4D80021595A /* main.m */; };
 		484C60B51BB0F4D80021595A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484C60B41BB0F4D80021595A /* Images.xcassets */; };
@@ -18,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48030D6E1BF41D9D004A6BCF /* NSView+SSYAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+SSYAutoLayout.h"; sourceTree = "<group>"; };
+		48030D6F1BF41D9D004A6BCF /* NSView+SSYAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+SSYAutoLayout.m"; sourceTree = "<group>"; };
+		48030D711BF42519004A6BCF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		484C60AA1BB0F4D80021595A /* SplitViewSidebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitViewSidebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		484C60AE1BB0F4D80021595A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		484C60AF1BB0F4D80021595A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		484C60A11BB0F4D80021595A = {
 			isa = PBXGroup;
 			children = (
+				48030D711BF42519004A6BCF /* README.md */,
 				484C60AC1BB0F4D80021595A /* SplitViewSidebar */,
 				484C60AB1BB0F4D80021595A /* Products */,
 			);
@@ -72,6 +78,8 @@
 				484C60CE1BB0F5EE0021595A /* BlueView.m */,
 				484C60CF1BB0F5EE0021595A /* FixedSidebarSplitViewController.h */,
 				484C60D01BB0F5EE0021595A /* FixedSidebarSplitViewController.m */,
+				48030D6E1BF41D9D004A6BCF /* NSView+SSYAutoLayout.h */,
+				48030D6F1BF41D9D004A6BCF /* NSView+SSYAutoLayout.m */,
 				484C60D11BB0F5EE0021595A /* RedView.h */,
 				484C60D21BB0F5EE0021595A /* RedView.m */,
 				484C60AF1BB0F4D80021595A /* AppDelegate.h */,
@@ -160,11 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48030D701BF41D9D004A6BCF /* NSView+SSYAutoLayout.m in Sources */,
 				484C60B31BB0F4D80021595A /* main.m in Sources */,
 				484C60B11BB0F4D80021595A /* AppDelegate.m in Sources */,
 				484C60D31BB0F5EE0021595A /* BlueView.m in Sources */,
 				484C60D51BB0F5EE0021595A /* RedView.m in Sources */,
 				484C60D41BB0F5EE0021595A /* FixedSidebarSplitViewController.m in Sources */,
+				48030D721BF42519004A6BCF /* README.md in Sources */,
 				489A7E6E1BC4AC6600F11229 /* FixedSidebarSplitView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
